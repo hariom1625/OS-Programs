@@ -4,7 +4,7 @@
 
 int main()
 {
-	for (int i = 0; i < 10; i++) // loop will run n times (n=5)
+	for (int i = 0; i < 10; i++) 
 	{
 		if (fork() == 0)
 		{
@@ -12,7 +12,7 @@ int main()
 			exit(0);
 		}
 	}
-	for (int i = 0; i < 5; i++) // loop will run n times (n=5)
+	for (int i = 0; i < 5; i++) 
 		wait(NULL);
 
 }
